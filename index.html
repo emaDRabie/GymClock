@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GymClock - Exercise Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gymclock-container">
+        <div class="timer-display">
+            <div class="phase-label">READY</div>
+            <div class="time">00:30</div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn start">START</button>
+            <button class="btn stop" disabled>STOP</button>
+            <button class="btn reset">RESET</button>
+        </div>
+        
+        <div class="settings">
+            <div class="setting">
+                <label>Work (sec)</label>
+                <input type="number" class="work-time" value="30" min="5" max="300">
+            </div>
+            <div class="setting">
+                <label>Rest (sec)</label>
+                <input type="number" class="rest-time" value="15" min="5" max="180">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
